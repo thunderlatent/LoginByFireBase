@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FBSDKLoginKit
 class LoginViewController: UIViewController {
     
     @IBOutlet var emailTextField: UITextField!
@@ -74,10 +75,10 @@ class LoginViewController: UIViewController {
             {
                 if let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainView")
                 {
-                    UIApplication.shared.keyWindow?.rootViewController = vc
-                    //                UIApplication.shared.windows.first?.rootViewController = vc
+//                    UIApplication.shared.keyWindow?.rootViewController = vc
+                                    UIApplication.shared.windows.first?.rootViewController = vc
                     self.dismiss(animated: true, completion: nil)
-                    //                self.present(vc, animated: true, completion: nil)
+//                                    self.present(vc, animated: true, completion: nil)
                     
                 }
             }else
@@ -94,4 +95,12 @@ class LoginViewController: UIViewController {
         }
         
     }
+    
+    
+    
+    deinit {
+            print("我被釋放啦！！")
+    }
+    
+    
 }

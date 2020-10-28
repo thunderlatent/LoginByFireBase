@@ -8,7 +8,8 @@
 
 import UIKit
 import FirebaseAuth
-
+import FBSDKLoginKit
+import GoogleSignIn
 class ProfileViewController: UIViewController {
     
     @IBOutlet var nameLabel: UILabel!
@@ -19,7 +20,7 @@ class ProfileViewController: UIViewController {
         self.title = "My Profile"
         if let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
         {
-            changeRequest.displayName = "JJJJ"
+            
             changeRequest.commitChanges { (error) in
                 if let error = error
                 {
@@ -27,9 +28,11 @@ class ProfileViewController: UIViewController {
                 }
             }
         }
-        if let currentUser = Auth.auth().currentUser?.email
+        if let currentUser = Auth.auth().currentUser
         {
-            nameLabel.text = currentUser
+            nameLabel.text = currentUser.displayName
+            
+            
         }
     }
 
@@ -42,8 +45,23 @@ class ProfileViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func logout(_ sender: UIButton) {
+        
         do
         {
+            if let providData = Auth.auth().currentUser?.providerData
+            {
+                let userInfo = providData[0]
+                
+                
+                switch userInfo.providerID {
+                case "google.com":
+                    GIDSignIn.sharedInstance()?.signOut()
+                case "facebook.com":
+                    LoginManager().logOut()
+                default:
+                    break
+                }
+            }
             try Auth.auth().signOut()
     }catch
     {
@@ -60,14 +78,6 @@ class ProfileViewController: UIViewController {
         }
         
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

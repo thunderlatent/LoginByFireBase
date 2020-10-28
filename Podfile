@@ -11,6 +11,14 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
 
+# Pods for Facebook
+  pod 'Bolts'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+
+# Pods for Google Sign In
+  pod 'GoogleSignIn'
+
 
 # add pods for any other desired Firebase products
 # https://firebase.google.com/docs/ios/setup#available-pods
