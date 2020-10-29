@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		537E52F22549A2EA00AA4D3C /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537E52F12549A2EA00AA4D3C /* MyButton.swift */; };
+		537E52F72549CBAF00AA4D3C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 537E52F62549CBAF00AA4D3C /* Lottie */; };
+		537E52FF2549CF3E00AA4D3C /* LoadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537E52FE2549CF3E00AA4D3C /* LoadAnimation.swift */; };
+		537E53032549D74800AA4D3C /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 537E53022549D74800AA4D3C /* loading.json */; };
 		539DA19C253E8EC10011488D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 539DA19B253E8EC10011488D /* GoogleService-Info.plist */; };
 		DFC990924DB62B371CBD8AF6 /* Pods_FirebaseDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4736AFEA01695A1D0955B894 /* Pods_FirebaseDemo.framework */; };
 		F4B9D7661E1FA62600F7CAD8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B9D7651E1FA62600F7CAD8 /* ProfileViewController.swift */; };
@@ -39,6 +42,8 @@
 		35687669198BE4E2D14AF697 /* Pods-FirebaseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDemo.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseDemo/Pods-FirebaseDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4736AFEA01695A1D0955B894 /* Pods_FirebaseDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		537E52F12549A2EA00AA4D3C /* MyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
+		537E52FE2549CF3E00AA4D3C /* LoadAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadAnimation.swift; sourceTree = "<group>"; };
+		537E53022549D74800AA4D3C /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = loading.json; path = ../../../../../loading.json; sourceTree = "<group>"; };
 		539DA19B253E8EC10011488D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4B9D7651E1FA62600F7CAD8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F4D2C34F1E1E169F00BD0580 /* UITextField+Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Placeholder.swift"; sourceTree = "<group>"; };
@@ -72,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFC990924DB62B371CBD8AF6 /* Pods_FirebaseDemo.framework in Frameworks */,
+				537E52F72549CBAF00AA4D3C /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,22 @@
 				27F55E9A0A2D8AFCC1602B6E /* Pods-FirebaseDemo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		537E52F92549CD6000AA4D3C /* LottieAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				537E53022549D74800AA4D3C /* loading.json */,
+			);
+			name = LottieAnimation;
+			sourceTree = "<group>";
+		};
+		537E52FD2549CF0300AA4D3C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				537E52FE2549CF3E00AA4D3C /* LoadAnimation.swift */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 		8D16571E6E9C685456A2C9C6 /* Frameworks */ = {
@@ -116,6 +138,7 @@
 		F4E9C8F91E013DBC00FD9D7C /* LoginByFireBase */ = {
 			isa = PBXGroup;
 			children = (
+				537E52FD2549CF0300AA4D3C /* Helper */,
 				F4E9C9121E0153BD00FD9D7C /* Resources */,
 				F4E9C90F1E013E2200FD9D7C /* Controller */,
 				F4E9C90E1E013E0C00FD9D7C /* View */,
@@ -155,6 +178,7 @@
 		F4E9C9121E0153BD00FD9D7C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				537E52F92549CD6000AA4D3C /* LottieAnimation */,
 				F4E9C9131E0153C700FD9D7C /* Fonts */,
 			);
 			name = Resources;
@@ -196,6 +220,9 @@
 			dependencies = (
 			);
 			name = FirebaseDemo;
+			packageProductDependencies = (
+				537E52F62549CBAF00AA4D3C /* Lottie */,
+			);
 			productName = FirebaseDemo;
 			productReference = F4E9C8F71E013DBC00FD9D7C /* FirebaseDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -228,6 +255,9 @@
 				Base,
 			);
 			mainGroup = F4E9C8EE1E013DBC00FD9D7C;
+			packageReferences = (
+				537E52F52549CBAF00AA4D3C /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = F4E9C8F81E013DBC00FD9D7C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -244,6 +274,7 @@
 			files = (
 				F4E9C91F1E0153E000FD9D7C /* Rubik-BlackItalic.ttf in Resources */,
 				F4E9C9241E0153E000FD9D7C /* Rubik-LightItalic.ttf in Resources */,
+				537E53032549D74800AA4D3C /* loading.json in Resources */,
 				F4E9C9201E0153E000FD9D7C /* Rubik-Bold.ttf in Resources */,
 				F4E9C9051E013DBC00FD9D7C /* LaunchScreen.storyboard in Resources */,
 				F4E9C9021E013DBC00FD9D7C /* Assets.xcassets in Resources */,
@@ -344,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4D2C3581E1E851300BD0580 /* ResetPasswordViewController.swift in Sources */,
+				537E52FF2549CF3E00AA4D3C /* LoadAnimation.swift in Sources */,
 				F4D2C3521E1E4B8E00BD0580 /* UINavigationController+Transparent.swift in Sources */,
 				537E52F22549A2EA00AA4D3C /* MyButton.swift in Sources */,
 				F4D2C3561E1E59AE00BD0580 /* WelcomeViewController.swift in Sources */,
@@ -477,7 +509,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -490,8 +523,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6X5J69Q9BS;
 				INFOPLIST_FILE = "$(SRCROOT)/LoginByFireBase/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.FirebaseDemo.JimmyChen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
@@ -506,8 +542,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6X5J69Q9BS;
 				INFOPLIST_FILE = "$(SRCROOT)/LoginByFireBase/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.FirebaseDemo.JimmyChen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
@@ -537,6 +576,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		537E52F52549CBAF00AA4D3C /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		537E52F62549CBAF00AA4D3C /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 537E52F52549CBAF00AA4D3C /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F4E9C8EF1E013DBC00FD9D7C /* Project object */;
 }

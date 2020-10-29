@@ -73,7 +73,8 @@ class ProfileViewController: UIViewController {
     
         if let welcomeVC = storyboard?.instantiateViewController(withIdentifier: "WelcomeView")
         {
-            UIApplication.shared.keyWindow?.rootViewController = welcomeVC
+//            UIApplication.shared.keyWindow?.rootViewController = welcomeVC
+            UIApplication.shared.windows.first?.rootViewController = welcomeVC
             dismiss(animated: true, completion: nil)
         }
         

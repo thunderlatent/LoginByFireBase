@@ -10,11 +10,15 @@ import UIKit
 import FirebaseAuth
 import FBSDKLoginKit
 import GoogleSignIn
-class WelcomeViewController: UIViewController {
+class WelcomeViewController: UIViewController, LoadAnimationAble
+{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//       getFBTokenToMainView()
+        
+        
+
+
         
         
         self.title = ""
@@ -77,14 +81,16 @@ class WelcomeViewController: UIViewController {
     @IBAction func facebookLogin(_ sender: UIButton) {
         let fbLoginManager = LoginManager()
         fbLoginManager.logIn(permissions: [.publicProfile,.email], viewController: self) { (result) in
+            self.startLoading(self)
             switch result
             {
             case .failed(let error):
                 print(error.localizedDescription)
+                self.stopLoading()
             case .success(granted: _, declined: _, token: let token):
-                
+
                 let creditcal = FacebookAuthProvider.credential(withAccessToken: token.tokenString)
-                
+
                 Auth.auth().signIn(with: creditcal) { (result, error) in
                     print("******",creditcal,"******")
                     if let error = error
@@ -92,23 +98,24 @@ class WelcomeViewController: UIViewController {
                         print("登入發生錯誤 = ",error.localizedDescription)
                         return
                     }
-                    
+
                     self.toPage(withIdentifier: "MainView")
 
-                    
-                    
+
+
                     print("登入成功")
                 }
-                
+
             case .cancelled:
-                
+                self.stopLoading()
                 print("登入Cancelled")
             }
         }
-        
+
     }
     
     @IBAction func googleLogin(_ sender: UIButton) {
+        startLoading(self)
         GIDSignIn.sharedInstance()?.signIn()
         
     }
