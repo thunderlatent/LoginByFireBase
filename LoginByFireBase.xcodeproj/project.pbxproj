@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		533F7B4D254ABB160024235E /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 533F7B4C254ABB160024235E /* loading.json */; };
 		537E52F22549A2EA00AA4D3C /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537E52F12549A2EA00AA4D3C /* MyButton.swift */; };
 		537E52F72549CBAF00AA4D3C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 537E52F62549CBAF00AA4D3C /* Lottie */; };
 		537E52FF2549CF3E00AA4D3C /* LoadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537E52FE2549CF3E00AA4D3C /* LoadAnimation.swift */; };
-		537E53032549D74800AA4D3C /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 537E53022549D74800AA4D3C /* loading.json */; };
 		539DA19C253E8EC10011488D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 539DA19B253E8EC10011488D /* GoogleService-Info.plist */; };
 		DFC990924DB62B371CBD8AF6 /* Pods_FirebaseDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4736AFEA01695A1D0955B894 /* Pods_FirebaseDemo.framework */; };
 		F4B9D7661E1FA62600F7CAD8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B9D7651E1FA62600F7CAD8 /* ProfileViewController.swift */; };
@@ -41,9 +41,9 @@
 		27F55E9A0A2D8AFCC1602B6E /* Pods-FirebaseDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDemo.release.xcconfig"; path = "Target Support Files/Pods-FirebaseDemo/Pods-FirebaseDemo.release.xcconfig"; sourceTree = "<group>"; };
 		35687669198BE4E2D14AF697 /* Pods-FirebaseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDemo.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseDemo/Pods-FirebaseDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4736AFEA01695A1D0955B894 /* Pods_FirebaseDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		533F7B4C254ABB160024235E /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		537E52F12549A2EA00AA4D3C /* MyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		537E52FE2549CF3E00AA4D3C /* LoadAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadAnimation.swift; sourceTree = "<group>"; };
-		537E53022549D74800AA4D3C /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = loading.json; path = ../../../../../loading.json; sourceTree = "<group>"; };
 		539DA19B253E8EC10011488D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4B9D7651E1FA62600F7CAD8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F4D2C34F1E1E169F00BD0580 /* UITextField+Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Placeholder.swift"; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 		537E52F92549CD6000AA4D3C /* LottieAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				537E53022549D74800AA4D3C /* loading.json */,
+				533F7B4C254ABB160024235E /* loading.json */,
 			);
 			name = LottieAnimation;
 			sourceTree = "<group>";
@@ -274,7 +274,6 @@
 			files = (
 				F4E9C91F1E0153E000FD9D7C /* Rubik-BlackItalic.ttf in Resources */,
 				F4E9C9241E0153E000FD9D7C /* Rubik-LightItalic.ttf in Resources */,
-				537E53032549D74800AA4D3C /* loading.json in Resources */,
 				F4E9C9201E0153E000FD9D7C /* Rubik-Bold.ttf in Resources */,
 				F4E9C9051E013DBC00FD9D7C /* LaunchScreen.storyboard in Resources */,
 				F4E9C9021E013DBC00FD9D7C /* Assets.xcassets in Resources */,
@@ -287,6 +286,7 @@
 				F4E9C9251E0153E000FD9D7C /* Rubik-Medium.ttf in Resources */,
 				F4E9C9001E013DBC00FD9D7C /* Main.storyboard in Resources */,
 				539DA19C253E8EC10011488D /* GoogleService-Info.plist in Resources */,
+				533F7B4D254ABB160024235E /* loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

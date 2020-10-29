@@ -92,7 +92,6 @@ class WelcomeViewController: UIViewController, LoadAnimationAble
                 let creditcal = FacebookAuthProvider.credential(withAccessToken: token.tokenString)
 
                 Auth.auth().signIn(with: creditcal) { (result, error) in
-                    print("******",creditcal,"******")
                     if let error = error
                     {
                         print("登入發生錯誤 = ",error.localizedDescription)
