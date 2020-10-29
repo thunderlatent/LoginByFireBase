@@ -528,7 +528,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.FirebaseDemo.JimmyChen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FirebaseDemo.JimmyChen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
@@ -547,7 +547,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.FirebaseDemo.JimmyChen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FirebaseDemo.JimmyChen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;

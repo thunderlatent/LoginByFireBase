@@ -61,7 +61,7 @@ class SignUpViewController: UIViewController {
             present(alertController, animated: true, completion: nil)
             return
          }
-//        Auth.auth().createUser(withEmail: <#T##String#>, password: <#T##String#>, completion: <#T##AuthDataResultCallback?##AuthDataResultCallback?##(AuthDataResult?, Error?) -> Void#>)
+
         Auth.auth().createUser(withEmail: emailAddress, password: password) { (user, error) in
             if let error = error
             {

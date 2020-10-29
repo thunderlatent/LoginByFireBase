@@ -35,6 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     internal func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         var handle = false
+        print("我是利用AppDelegate這邊的方法登入的啦")
 
             if url.absoluteString.contains("fb") {
                 handle = ApplicationDelegate.shared.application(app, open: url, options: options)
@@ -56,6 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         guard let context = URLContexts.first else {
             return
         }
+        print("原來我是走iOS 13登入的")
         ApplicationDelegate.shared.application(
             UIApplication.shared,
             open: context.url,
