@@ -10,6 +10,8 @@ target 'FirebaseDemo' do
 pod 'Firebase/Analytics'
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Storage'
 
 # Pods for Facebook
   pod 'Bolts'
@@ -18,6 +20,9 @@ pod 'Firebase/Auth'
 
 # Pods for Google Sign In
   pod 'GoogleSignIn'
+
+# Pods for ImagePicker
+pod 'ImagePicker'
 
 
 # add pods for any other desired Firebase products

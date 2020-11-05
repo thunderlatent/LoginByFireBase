@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		533E4A30254C2FAB00E2BCB8 /* UIImage+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E4A2F254C2FAB00E2BCB8 /* UIImage+Scale.swift */; };
 		533F7B4D254ABB160024235E /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 533F7B4C254ABB160024235E /* loading.json */; };
+		533F7B70254C04F30024235E /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533F7B6F254C04F30024235E /* FeedTableViewController.swift */; };
+		533F7B73254C05020024235E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533F7B72254C05020024235E /* PostCell.swift */; };
+		5370FEA525501CC900FA0276 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5370FEA425501CC900FA0276 /* Model.swift */; };
 		537E52F22549A2EA00AA4D3C /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537E52F12549A2EA00AA4D3C /* MyButton.swift */; };
 		537E52F72549CBAF00AA4D3C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 537E52F62549CBAF00AA4D3C /* Lottie */; };
 		537E52FF2549CF3E00AA4D3C /* LoadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537E52FE2549CF3E00AA4D3C /* LoadAnimation.swift */; };
 		539DA19C253E8EC10011488D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 539DA19B253E8EC10011488D /* GoogleService-Info.plist */; };
+		53DF40642550EBA40017BB68 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF40632550EBA40017BB68 /* PostService.swift */; };
+		53DF4098255133FB0017BB68 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF4097255133FB0017BB68 /* CacheManager.swift */; };
 		DFC990924DB62B371CBD8AF6 /* Pods_FirebaseDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4736AFEA01695A1D0955B894 /* Pods_FirebaseDemo.framework */; };
 		F4B9D7661E1FA62600F7CAD8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B9D7651E1FA62600F7CAD8 /* ProfileViewController.swift */; };
 		F4D2C3501E1E169F00BD0580 /* UITextField+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D2C34F1E1E169F00BD0580 /* UITextField+Placeholder.swift */; };
@@ -41,10 +47,16 @@
 		27F55E9A0A2D8AFCC1602B6E /* Pods-FirebaseDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDemo.release.xcconfig"; path = "Target Support Files/Pods-FirebaseDemo/Pods-FirebaseDemo.release.xcconfig"; sourceTree = "<group>"; };
 		35687669198BE4E2D14AF697 /* Pods-FirebaseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDemo.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseDemo/Pods-FirebaseDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4736AFEA01695A1D0955B894 /* Pods_FirebaseDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		533E4A2F254C2FAB00E2BCB8 /* UIImage+Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Scale.swift"; sourceTree = "<group>"; };
 		533F7B4C254ABB160024235E /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		533F7B6F254C04F30024235E /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		533F7B72254C05020024235E /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		5370FEA425501CC900FA0276 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		537E52F12549A2EA00AA4D3C /* MyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		537E52FE2549CF3E00AA4D3C /* LoadAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadAnimation.swift; sourceTree = "<group>"; };
 		539DA19B253E8EC10011488D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		53DF40632550EBA40017BB68 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		53DF4097255133FB0017BB68 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		F4B9D7651E1FA62600F7CAD8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F4D2C34F1E1E169F00BD0580 /* UITextField+Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Placeholder.swift"; sourceTree = "<group>"; };
 		F4D2C3511E1E4B8E00BD0580 /* UINavigationController+Transparent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Transparent.swift"; sourceTree = "<group>"; };
@@ -93,20 +105,74 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		533E4A26254C2E4600E2BCB8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				533E4A2F254C2FAB00E2BCB8 /* UIImage+Scale.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		533E4A28254C2E9400E2BCB8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4E9C90C1E013DF800FD9D7C /* LoginViewController.swift */,
+				F4D2C3531E1E54C300BD0580 /* SignUpViewController.swift */,
+				F4D2C3551E1E59AE00BD0580 /* WelcomeViewController.swift */,
+				F4D2C3571E1E851300BD0580 /* ResetPasswordViewController.swift */,
+				F4B9D7651E1FA62600F7CAD8 /* ProfileViewController.swift */,
+				533F7B6F254C04F30024235E /* FeedTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		533E4A2A254C2EE900E2BCB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				533F7B72254C05020024235E /* PostCell.swift */,
+				537E52F12549A2EA00AA4D3C /* MyButton.swift */,
+				F4E9C9101E013E4E00FD9D7C /* LineButton.swift */,
+				F4D2C34F1E1E169F00BD0580 /* UITextField+Placeholder.swift */,
+				F4D2C3511E1E4B8E00BD0580 /* UINavigationController+Transparent.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		533E4A2D254C2F0B00E2BCB8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				537E52FE2549CF3E00AA4D3C /* LoadAnimation.swift */,
+				53DF40632550EBA40017BB68 /* PostService.swift */,
+				53DF4097255133FB0017BB68 /* CacheManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5370FE69254D941900FA0276 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				537E52F92549CD6000AA4D3C /* LottieAnimation */,
+				F4E9C9131E0153C700FD9D7C /* Fonts */,
+			);
+			name = Resources;
+			path = Resources/Resources;
+			sourceTree = "<group>";
+		};
+		5370FEA325501CA900FA0276 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5370FEA425501CC900FA0276 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		537E52F92549CD6000AA4D3C /* LottieAnimation */ = {
 			isa = PBXGroup;
 			children = (
 				533F7B4C254ABB160024235E /* loading.json */,
 			);
 			name = LottieAnimation;
-			sourceTree = "<group>";
-		};
-		537E52FD2549CF0300AA4D3C /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				537E52FE2549CF3E00AA4D3C /* LoadAnimation.swift */,
-			);
-			name = Helper;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		8D16571E6E9C685456A2C9C6 /* Frameworks */ = {
@@ -138,10 +204,12 @@
 		F4E9C8F91E013DBC00FD9D7C /* LoginByFireBase */ = {
 			isa = PBXGroup;
 			children = (
-				537E52FD2549CF0300AA4D3C /* Helper */,
-				F4E9C9121E0153BD00FD9D7C /* Resources */,
-				F4E9C90F1E013E2200FD9D7C /* Controller */,
-				F4E9C90E1E013E0C00FD9D7C /* View */,
+				533E4A26254C2E4600E2BCB8 /* Extension */,
+				533E4A2D254C2F0B00E2BCB8 /* Helper */,
+				5370FE69254D941900FA0276 /* Resources */,
+				5370FEA325501CA900FA0276 /* Model */,
+				533E4A2A254C2EE900E2BCB8 /* View */,
+				533E4A28254C2E9400E2BCB8 /* Controller */,
 				F4E9C8FA1E013DBC00FD9D7C /* AppDelegate.swift */,
 				F4E9C8FE1E013DBC00FD9D7C /* Main.storyboard */,
 				F4E9C9011E013DBC00FD9D7C /* Assets.xcassets */,
@@ -150,38 +218,6 @@
 				539DA19B253E8EC10011488D /* GoogleService-Info.plist */,
 			);
 			path = LoginByFireBase;
-			sourceTree = "<group>";
-		};
-		F4E9C90E1E013E0C00FD9D7C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				537E52F12549A2EA00AA4D3C /* MyButton.swift */,
-				F4E9C9101E013E4E00FD9D7C /* LineButton.swift */,
-				F4D2C34F1E1E169F00BD0580 /* UITextField+Placeholder.swift */,
-				F4D2C3511E1E4B8E00BD0580 /* UINavigationController+Transparent.swift */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		F4E9C90F1E013E2200FD9D7C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F4E9C90C1E013DF800FD9D7C /* LoginViewController.swift */,
-				F4D2C3531E1E54C300BD0580 /* SignUpViewController.swift */,
-				F4D2C3551E1E59AE00BD0580 /* WelcomeViewController.swift */,
-				F4D2C3571E1E851300BD0580 /* ResetPasswordViewController.swift */,
-				F4B9D7651E1FA62600F7CAD8 /* ProfileViewController.swift */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		F4E9C9121E0153BD00FD9D7C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				537E52F92549CD6000AA4D3C /* LottieAnimation */,
-				F4E9C9131E0153C700FD9D7C /* Fonts */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		F4E9C9131E0153C700FD9D7C /* Fonts */ = {
@@ -199,6 +235,7 @@
 				F4E9C91D1E0153E000FD9D7C /* Rubik-Regular.ttf */,
 			);
 			name = Fonts;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,29 +335,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FirebaseDemo/Pods-FirebaseDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseDemo/Pods-FirebaseDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseDemo/Pods-FirebaseDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -332,13 +352,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FirebaseDemo/Pods-FirebaseDemo-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseDemo/Pods-FirebaseDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseDemo/Pods-FirebaseDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -374,13 +393,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5370FEA525501CC900FA0276 /* Model.swift in Sources */,
 				F4D2C3581E1E851300BD0580 /* ResetPasswordViewController.swift in Sources */,
 				537E52FF2549CF3E00AA4D3C /* LoadAnimation.swift in Sources */,
+				53DF4098255133FB0017BB68 /* CacheManager.swift in Sources */,
+				53DF40642550EBA40017BB68 /* PostService.swift in Sources */,
+				533F7B73254C05020024235E /* PostCell.swift in Sources */,
 				F4D2C3521E1E4B8E00BD0580 /* UINavigationController+Transparent.swift in Sources */,
+				533E4A30254C2FAB00E2BCB8 /* UIImage+Scale.swift in Sources */,
 				537E52F22549A2EA00AA4D3C /* MyButton.swift in Sources */,
 				F4D2C3561E1E59AE00BD0580 /* WelcomeViewController.swift in Sources */,
 				F4D2C3541E1E54C300BD0580 /* SignUpViewController.swift in Sources */,
 				F4E9C90D1E013DF800FD9D7C /* LoginViewController.swift in Sources */,
+				533F7B70254C04F30024235E /* FeedTableViewController.swift in Sources */,
 				F4E9C8FB1E013DBC00FD9D7C /* AppDelegate.swift in Sources */,
 				F4B9D7661E1FA62600F7CAD8 /* ProfileViewController.swift in Sources */,
 				F4E9C9111E013E4E00FD9D7C /* LineButton.swift in Sources */,

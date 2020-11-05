@@ -9,15 +9,16 @@
 import UIKit
 import Lottie
 protocol LoadAnimationAble {
-    func startLoading(_ vc: UIViewController)
+    func startLoading(_ view: UIView)
     func stopLoading()
 }
 //extension內的where Self意思是這個擴充只在UIViewController生效，若是其他類別遵從這個協議，則這個擴充無效
-extension LoadAnimationAble where Self: UIViewController
+extension LoadAnimationAble
 {
-    func startLoading(_ vc: UIViewController)
+    func startLoading(_ view: UIView)
     {
-        LoadAnimation.share.startLoading(vc)
+        LoadAnimation.share.startLoading(view)
+        
     }
     func stopLoading()
     {
@@ -38,14 +39,14 @@ class LoadAnimation
             label.adjustsFontSizeToFitWidth = true
             return label
         }()
-    func startLoading(_ vc:UIViewController){
+    func startLoading(_ view:UIView){
         animationView.addSubview(loadingLabel)
-        vc.view.addSubview(animationView)
+        view.addSubview(animationView)
         let width = UIScreen.main.bounds.width
         let height = UIScreen.main.bounds.height
         let frame = CGRect(x: width / 2, y: height / 2, width: width / 2, height: width / 2)
         animationView.frame = frame
-        animationView.center = vc.view.center
+        animationView.center = view.center
         animationView.loopMode = .loop
         animationView.contentMode = .scaleAspectFill
         animationView.animationSpeed = 0.5
