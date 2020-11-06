@@ -11,31 +11,6 @@ import FirebaseAuth
 import FirebaseDatabase
 import FirebaseStorage
 
-protocol GetFirRef {
-    func baseDbRef() -> DatabaseReference
-    func postDbRef() -> DatabaseReference
-    func photoStorageRef() -> StorageReference
-
-}
-extension GetFirRef
-{
-    func baseDbRef() -> DatabaseReference
-    {
-        return PostService.shared.baseDbRef()
-    }
-    
-    func postDbRef() -> DatabaseReference
-    {
-        return PostService.shared.postDbRef()
-    }
-    
-    func photoStorageRef() -> StorageReference
-    {
-        return PostService.shared.photoStorageRef()
-    }
-    
-}
-
 class PostService{
     private init(){}
     static let shared = PostService()
@@ -53,16 +28,18 @@ class PostService{
     {
         return Storage.storage().reference().child("photos")
     }
+    
     func uploadImage(image: UIImage, completion:@escaping () -> Void)
     {
         let postDatabaseRef = postDbRef().childByAutoId()
         let imageStorageRef = photoStorageRef().child("\(postDatabaseRef.key).jpg")
-        let scaleImage = image.scale(newWidth: 640)
-        guard let imageData = scaleImage.jpegData(compressionQuality: 0.9) else {return}
+        let scaleImage = image.scale(newWidth: 4320)
+        guard let imageData = scaleImage.jpegData(compressionQuality: 1) else {return}
         let metaData = StorageMetadata()
         metaData.contentType = "image/jpg"
-        
+    
         let uploadTask = imageStorageRef.putData(imageData, metadata: metaData)
+        
         
         uploadTask.observe(.success) { (shapshot) in
             
@@ -87,6 +64,7 @@ class PostService{
             }
         }
         uploadTask.observe(.progress) { (snapshot) in
+            
             let percentComplete = (Double(snapshot.progress!.completedUnitCount) / Double(snapshot.progress!.totalUnitCount)) * 100.00
             let percentStr = String(format: "%.2f", percentComplete)
             print("現在上傳進度\(percentStr)%")
@@ -99,16 +77,16 @@ class PostService{
         }
     }
     
-    func getRecentPosts(start timestamp: Int? = nil, limit: UInt, completion: @escaping([Post]) -> Void)
+    func getNewerPosts(start timestamp: Int?, limit: UInt, completion: @escaping([Post]) -> Void)
     {
         //使用postDbRef路徑下的timestamp來做排序＝Database/posts/
         var postQuery = postDbRef().queryOrdered(byChild: PostInfoKey.timestamp.rawValue)
         
         //獲取最新的時戳
-        if let lastPostTimestamp = timestamp, lastPostTimestamp > 0
+        if let newestPostTimestamp = timestamp, newestPostTimestamp > 0
         {
             //從最新的時戳開始抓資料，並且抓limit筆
-            postQuery = postQuery.queryStarting(atValue: lastPostTimestamp + 1, childKey: PostInfoKey.timestamp.rawValue).queryLimited(toLast: limit)
+            postQuery = postQuery.queryStarting(atValue: newestPostTimestamp + 1, childKey: PostInfoKey.timestamp.rawValue).queryLimited(toLast: limit)
             
         }else
         {
@@ -144,14 +122,16 @@ class PostService{
     }
     
     
-    func getOldPosts(start timestamp: Int, limit: UInt, completion: @escaping ([Post]) -> Void)
+    func getOlderPosts(start timestamp: Int, limit: UInt, completion: @escaping ([Post]) -> Void)
     {
-        let postOrderQuery = postDbRef().child(PostInfoKey.timestamp.rawValue)
-        let postLimitQuery = postOrderQuery.queryEnding(atValue: timestamp - 1, childKey: PostInfoKey.timestamp.rawValue).queryLimited(toLast: limit)
+        //設定按照timestamp來排序
+        let postOrderQuery = postDbRef().queryOrdered(byChild: PostInfoKey.timestamp.rawValue)
         
+        //排序的點在timestamp-1，並且排序limit筆，如果limit是5，則queryEnging會排序從timestamp-1開始，比這個時間小的五筆資料
+        let postLimitQuery = postOrderQuery.queryEnding(atValue: timestamp - 1, childKey: PostInfoKey.timestamp.rawValue).queryLimited(toLast: limit)
         postLimitQuery.observeSingleEvent(of: .value) { (snapshot) in
             var newPosts: [Post] = []
-            for item in snapshot.children.allObjects as! [DataSnapshot]
+            for item in (snapshot.children.allObjects as! [DataSnapshot])
             {
                 let postInfo = item.value as? [String : Any] ?? [:]
                 if let post = Post(postID: item.key, postInfo: postInfo)

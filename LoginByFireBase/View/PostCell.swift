@@ -64,7 +64,7 @@ class PostCell: UITableViewCell,LoadAnimationAble {
         voteButton.tintColor = .white
  
         photoImageView.image = nil
-        
+        print(post.imageFileURL)
         if let image = CacheManager.shared.getFromCache(key: post.imageFileURL) as? UIImage
         {
             photoImageView.image = image
@@ -97,7 +97,7 @@ class PostCell: UITableViewCell,LoadAnimationAble {
                     }
                 }
                     
-                    CacheManager.shared.setCache(object: image, key: post.imageFileURL)
+                    CacheManager.shared.saveIntoCache(object: image, key: post.imageFileURL)
                 }.resume()
             }
         }
