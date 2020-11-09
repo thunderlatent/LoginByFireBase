@@ -15,7 +15,6 @@ class SignUpViewController: UIViewController {
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("LinBai's Email = ",Auth.auth().currentUser?.email ?? "***NO Value***")

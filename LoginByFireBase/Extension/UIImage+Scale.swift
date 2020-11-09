@@ -12,7 +12,7 @@ extension UIImage
     func scale(newWidth: CGFloat) -> UIImage
     {
         guard self.size.width != newWidth else{return self}
-        
+        print("原本圖片大小為",self.size)
         let scaleFactor = newWidth / self.size.width
         
         let newHeight = self.size.height * scaleFactor
@@ -23,6 +23,8 @@ extension UIImage
         
         let newImage: UIImage? = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
+        
+        print("更改後的圖片大小為：",newImage?.size)
         return newImage ?? self
     }
 }

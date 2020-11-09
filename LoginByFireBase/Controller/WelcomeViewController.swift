@@ -18,8 +18,7 @@ class WelcomeViewController: UIViewController, LoadAnimationAble
         super.viewDidLoad()
         self.title = ""
         let timestamp = Double(Date().timeIntervalSince1970)
-        
-       
+
         //哪一頁要跳轉到Google登入頁
         GIDSignIn.sharedInstance()?.presentingViewController = self
         GIDSignIn.sharedInstance()?.delegate = self

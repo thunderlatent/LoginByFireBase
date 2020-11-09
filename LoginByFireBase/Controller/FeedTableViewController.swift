@@ -55,10 +55,15 @@ class FeedTableViewController: UITableViewController,PostServiceAble,GetFirRef,L
     {
         guard posts.count > 0 else
         {
-            let alertController = UIAlertController(title: "目前已是最新資料", message: "", preferredStyle: .alert)
-            let OKAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-            alertController.addAction(OKAction)
-            present(alertController, animated: true, completion: nil)
+            stopLoading()
+            if postFeed.count > 0
+            {
+                popAlertController(title: "目前已是最新資料", message: "請稍後再刷新", actionTitle: "OK")
+            }else if postFeed.count == 0
+            {
+                popAlertController(title: "目前無資料", message: "可至左上角上傳新照片與朋友分享你的生活紀錄", actionTitle: "OK")
+            }
+            
             return
         }
         var indexPaths:[IndexPath] = []

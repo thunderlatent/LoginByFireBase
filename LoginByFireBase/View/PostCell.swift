@@ -9,10 +9,7 @@
 import UIKit
 
 class PostCell: UITableViewCell,LoadAnimationAble {
-   public var testPublic = 0
-    private var testPrivate = 0
-    internal var testInternal = 0
-    fileprivate var testFilePrivate = 0
+  
     @IBOutlet var nameLabel: UILabel!
     
     @IBOutlet var voteButton: LineButton! {
@@ -64,7 +61,6 @@ class PostCell: UITableViewCell,LoadAnimationAble {
         voteButton.tintColor = .white
  
         photoImageView.image = nil
-        print(post.imageFileURL)
         if let image = CacheManager.shared.getFromCache(key: post.imageFileURL) as? UIImage
         {
             photoImageView.image = image
