@@ -31,7 +31,7 @@ class FeedTableViewController: UITableViewController,PostServiceAble,GetFirRef,L
         self.isLoadingPost = true
         //閉包內的newPosts就是從Firebase抓到的指定筆數的資料，並且由時間由大至小排列
         
-        getNewerPosts(start: postFeed.first?.timestamp, limit: 10) { (newPosts) in
+        getNewerPosts(start: postFeed.first?.timestamp, limit: 2) { (newPosts) in
             if newPosts.count > 0
             {
                 self.postFeed.insert(contentsOf: newPosts, at: 0)

@@ -114,7 +114,7 @@ class PostService{
         if let newestPostTimestamp = timestamp, newestPostTimestamp > 0
         {
             //從最新的時戳開始抓資料，並且抓limit筆
-            postQuery = postQuery.queryStarting(atValue: newestPostTimestamp + 1, childKey: PostInfoKey.timestamp.rawValue).queryLimited(toLast: limit)
+            postQuery = postQuery.queryStarting(atValue: newestPostTimestamp + 1, childKey: PostInfoKey.timestamp.rawValue).queryLimited(toFirst: limit)
             
         }else
         {
