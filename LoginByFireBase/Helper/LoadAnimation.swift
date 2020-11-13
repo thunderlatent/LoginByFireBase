@@ -29,7 +29,7 @@ class LoadAnimation
 {
      
     static let share = LoadAnimation()
-    let animationView = AnimationView(name: "loading")
+    let animationView = AnimationView(name: "instagramLoading")
     let loadingLabel: UILabel =
         {
             let label = UILabel()
@@ -40,16 +40,16 @@ class LoadAnimation
             return label
         }()
     func startLoading(_ view:UIView){
-        animationView.addSubview(loadingLabel)
+//        animationView.addSubview(loadingLabel)
         view.addSubview(animationView)
         let width = UIScreen.main.bounds.width
         let height = UIScreen.main.bounds.height
-        let frame = CGRect(x: width / 2, y: height / 2, width: width / 2, height: width / 2)
+        let frame = CGRect(x: width / 2, y: height / 2, width: width / 5, height: width / 5)
         animationView.frame = frame
         animationView.center = view.center
         animationView.loopMode = .loop
         animationView.contentMode = .scaleAspectFill
-        animationView.animationSpeed = 0.5
+        animationView.animationSpeed = 1
         animationView.play()
         loadingLabel.frame.size = CGSize(width: animationView.bounds.width / 2, height: animationView.bounds.width / 4)
         loadingLabel.center.x = animationView.bounds.midX

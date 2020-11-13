@@ -18,7 +18,7 @@ class WelcomeViewController: UIViewController, LoadAnimationAble
         super.viewDidLoad()
         self.title = ""
         let timestamp = Double(Date().timeIntervalSince1970)
-
+        startLoading(self.view)
         //哪一頁要跳轉到Google登入頁
         GIDSignIn.sharedInstance()?.presentingViewController = self
         GIDSignIn.sharedInstance()?.delegate = self
@@ -145,10 +145,12 @@ class WelcomeViewController: UIViewController, LoadAnimationAble
         
     }
     
-    @IBAction func unwindToWelcome(segue: UIStoryboardSegue)
-    {
-        
+    @IBAction func toLoginVC(_ sender: UIButton) {
+        let loginVC = LoginViewController()
+        loginVC.modalPresentationStyle = .fullScreen
+        present(loginVC, animated: true, completion: nil)
     }
+    
 }
 
 // MARK: - Extension
@@ -156,7 +158,7 @@ extension WelcomeViewController: GIDSignInDelegate
 {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
               withError error: Error!) {
-        self.stopLoading()
+//        self.stopLoading()
       if let error = error {
         if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
           print("使用者尚未登入Google或者已經登出")

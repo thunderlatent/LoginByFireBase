@@ -36,7 +36,7 @@ class PostService{
         
         //取得在Storage的參照路徑
         let imageStorageRef = photoStorageRef().child("\(postDatabaseRef.key).jpg")
-        let scaleImage = image.scale(newWidth: 640)
+        let scaleImage = image.scale(newWidth: 414)
         //將image轉成Data格式，因為Storage不支援UIImage格式，因此轉成Data
         guard let imageData = scaleImage.jpegData(compressionQuality: 0.9) else {return}
         

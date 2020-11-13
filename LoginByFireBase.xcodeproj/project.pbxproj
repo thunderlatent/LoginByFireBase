@@ -11,12 +11,17 @@
 		533F7B4D254ABB160024235E /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 533F7B4C254ABB160024235E /* loading.json */; };
 		533F7B70254C04F30024235E /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533F7B6F254C04F30024235E /* FeedTableViewController.swift */; };
 		533F7B73254C05020024235E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533F7B72254C05020024235E /* PostCell.swift */; };
-		5370FEA525501CC900FA0276 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5370FEA425501CC900FA0276 /* Model.swift */; };
+		5351342E255CD15200388811 /* instagramLoading.json in Resources */ = {isa = PBXBuildFile; fileRef = 5351342D255CD15200388811 /* instagramLoading.json */; };
+		5370FEA525501CC900FA0276 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5370FEA425501CC900FA0276 /* PostModel.swift */; };
 		537E52F22549A2EA00AA4D3C /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537E52F12549A2EA00AA4D3C /* MyButton.swift */; };
 		537E52F72549CBAF00AA4D3C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 537E52F62549CBAF00AA4D3C /* Lottie */; };
 		537E52FF2549CF3E00AA4D3C /* LoadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537E52FE2549CF3E00AA4D3C /* LoadAnimation.swift */; };
 		539DA19C253E8EC10011488D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 539DA19B253E8EC10011488D /* GoogleService-Info.plist */; };
+		539E5A97255BF21100F10293 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E5A93255BF21000F10293 /* CustomTextField.swift */; };
+		539E5A9A255BF21100F10293 /* LoginView+ScrollViewByKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E5A96255BF21100F10293 /* LoginView+ScrollViewByKeyboard.swift */; };
 		53AF3DC72558F4F00001D1B9 /* UIViewController+UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AF3DC62558F4F00001D1B9 /* UIViewController+UIAlertController.swift */; };
+		53B114EF255965AA006C79D1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 53B114EE255965AA006C79D1 /* SnapKit */; };
+		53BD2A5E255E3EC70053E946 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BD2A5D255E3EC60053E946 /* LoginView.swift */; };
 		53DF40642550EBA40017BB68 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF40632550EBA40017BB68 /* PostService.swift */; };
 		53DF4098255133FB0017BB68 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF4097255133FB0017BB68 /* CacheManager.swift */; };
 		53DF410A2553F6BC0017BB68 /* PostService+GetFirRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF41092553F6BA0017BB68 /* PostService+GetFirRef.swift */; };
@@ -57,11 +62,15 @@
 		533F7B4C254ABB160024235E /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		533F7B6F254C04F30024235E /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		533F7B72254C05020024235E /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
-		5370FEA425501CC900FA0276 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5351342D255CD15200388811 /* instagramLoading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = instagramLoading.json; sourceTree = "<group>"; };
+		5370FEA425501CC900FA0276 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		537E52F12549A2EA00AA4D3C /* MyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		537E52FE2549CF3E00AA4D3C /* LoadAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadAnimation.swift; sourceTree = "<group>"; };
 		539DA19B253E8EC10011488D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		539E5A93255BF21000F10293 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		539E5A96255BF21100F10293 /* LoginView+ScrollViewByKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginView+ScrollViewByKeyboard.swift"; sourceTree = "<group>"; };
 		53AF3DC62558F4F00001D1B9 /* UIViewController+UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIAlertController.swift"; sourceTree = "<group>"; };
+		53BD2A5D255E3EC60053E946 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		53DF40632550EBA40017BB68 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		53DF4097255133FB0017BB68 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		53DF41092553F6BA0017BB68 /* PostService+GetFirRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostService+GetFirRef.swift"; sourceTree = "<group>"; };
@@ -100,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53B114EF255965AA006C79D1 /* SnapKit in Frameworks */,
 				DFC990924DB62B371CBD8AF6 /* Pods_FirebaseDemo.framework in Frameworks */,
 				537E52F72549CBAF00AA4D3C /* Lottie in Frameworks */,
 			);
@@ -149,6 +159,9 @@
 				F4E9C9101E013E4E00FD9D7C /* LineButton.swift */,
 				F4D2C34F1E1E169F00BD0580 /* UITextField+Placeholder.swift */,
 				F4D2C3511E1E4B8E00BD0580 /* UINavigationController+Transparent.swift */,
+				539E5A93255BF21000F10293 /* CustomTextField.swift */,
+				53BD2A5D255E3EC60053E946 /* LoginView.swift */,
+				539E5A96255BF21100F10293 /* LoginView+ScrollViewByKeyboard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,7 +192,7 @@
 		5370FEA325501CA900FA0276 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5370FEA425501CC900FA0276 /* Model.swift */,
+				5370FEA425501CC900FA0276 /* PostModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +200,7 @@
 		537E52F92549CD6000AA4D3C /* LottieAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				5351342D255CD15200388811 /* instagramLoading.json */,
 				533F7B4C254ABB160024235E /* loading.json */,
 			);
 			name = LottieAnimation;
@@ -222,9 +236,9 @@
 		F4E9C8F91E013DBC00FD9D7C /* LoginByFireBase */ = {
 			isa = PBXGroup;
 			children = (
+				5370FE69254D941900FA0276 /* Resources */,
 				533E4A26254C2E4600E2BCB8 /* Extension */,
 				533E4A2D254C2F0B00E2BCB8 /* Helper */,
-				5370FE69254D941900FA0276 /* Resources */,
 				5370FEA325501CA900FA0276 /* Model */,
 				533E4A2A254C2EE900E2BCB8 /* View */,
 				533E4A28254C2E9400E2BCB8 /* Controller */,
@@ -277,6 +291,7 @@
 			name = FirebaseDemo;
 			packageProductDependencies = (
 				537E52F62549CBAF00AA4D3C /* Lottie */,
+				53B114EE255965AA006C79D1 /* SnapKit */,
 			);
 			productName = FirebaseDemo;
 			productReference = F4E9C8F71E013DBC00FD9D7C /* FirebaseDemo.app */;
@@ -312,6 +327,7 @@
 			mainGroup = F4E9C8EE1E013DBC00FD9D7C;
 			packageReferences = (
 				537E52F52549CBAF00AA4D3C /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				53B114ED255965AA006C79D1 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = F4E9C8F81E013DBC00FD9D7C /* Products */;
 			projectDirPath = "";
@@ -328,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4E9C91F1E0153E000FD9D7C /* Rubik-BlackItalic.ttf in Resources */,
+				5351342E255CD15200388811 /* instagramLoading.json in Resources */,
 				F4E9C9241E0153E000FD9D7C /* Rubik-LightItalic.ttf in Resources */,
 				F4E9C9201E0153E000FD9D7C /* Rubik-Bold.ttf in Resources */,
 				F4E9C9051E013DBC00FD9D7C /* LaunchScreen.storyboard in Resources */,
@@ -412,18 +429,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				53DF41162553FBA70017BB68 /* FeedTableViewController+Delegate.swift in Sources */,
-				5370FEA525501CC900FA0276 /* Model.swift in Sources */,
+				5370FEA525501CC900FA0276 /* PostModel.swift in Sources */,
 				F4D2C3581E1E851300BD0580 /* ResetPasswordViewController.swift in Sources */,
 				537E52FF2549CF3E00AA4D3C /* LoadAnimation.swift in Sources */,
 				53DF4098255133FB0017BB68 /* CacheManager.swift in Sources */,
 				53DF410D2553F6E30017BB68 /* PostService+PostServiceAble.swift in Sources */,
 				53DF410A2553F6BC0017BB68 /* PostService+GetFirRef.swift in Sources */,
 				53DF40642550EBA40017BB68 /* PostService.swift in Sources */,
+				539E5A97255BF21100F10293 /* CustomTextField.swift in Sources */,
 				533F7B73254C05020024235E /* PostCell.swift in Sources */,
 				F4D2C3521E1E4B8E00BD0580 /* UINavigationController+Transparent.swift in Sources */,
 				533E4A30254C2FAB00E2BCB8 /* UIImage+Scale.swift in Sources */,
 				53DF41132553FB720017BB68 /* FeedTableViewController+DataSource.swift in Sources */,
 				537E52F22549A2EA00AA4D3C /* MyButton.swift in Sources */,
+				539E5A9A255BF21100F10293 /* LoginView+ScrollViewByKeyboard.swift in Sources */,
 				F4D2C3561E1E59AE00BD0580 /* WelcomeViewController.swift in Sources */,
 				F4D2C3541E1E54C300BD0580 /* SignUpViewController.swift in Sources */,
 				F4E9C90D1E013DF800FD9D7C /* LoginViewController.swift in Sources */,
@@ -433,6 +452,7 @@
 				53AF3DC72558F4F00001D1B9 /* UIViewController+UIAlertController.swift in Sources */,
 				F4E9C9111E013E4E00FD9D7C /* LineButton.swift in Sources */,
 				F4D2C3501E1E169F00BD0580 /* UITextField+Placeholder.swift in Sources */,
+				53BD2A5E255E3EC70053E946 /* LoginView.swift in Sources */,
 				53DF41102553F7B20017BB68 /* FeedTableViewcontroller+ImagePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,6 +655,14 @@
 				minimumVersion = 3.1.8;
 			};
 		};
+		53B114ED255965AA006C79D1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -642,6 +670,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 537E52F52549CBAF00AA4D3C /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		53B114EE255965AA006C79D1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53B114ED255965AA006C79D1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

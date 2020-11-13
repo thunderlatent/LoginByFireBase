@@ -79,10 +79,11 @@
                                     <segue destination="Ahu-et-QBf" kind="presentation" id="dZC-Vm-azo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOx-bQ-brQ" customClass="MyButton" customModule="FirebaseDemo" customModuleProvider="target">
-                                <rect key="frame" x="16" y="346" width="343" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOx-bQ-brQ" customClass="MyButton" customModule="FirebaseDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="347" width="343" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ks2-Hr-1UH"/>
+                                    <constraint firstAttribute="width" constant="343" id="ybq-w0-LLg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -117,7 +118,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="egJ-Rz-ft8" kind="presentation" id="cDw-Ll-81W"/>
+                                    <action selector="toLoginVC:" destination="c4X-vN-RJm" eventType="touchUpInside" id="zge-8t-BhH"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="p2o-0x-MSt">
@@ -222,18 +223,18 @@
             <objects>
                 <viewController id="DbA-Ew-C6i" customClass="LoginViewController" customModule="FirebaseDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FuI-aJ-dJk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_fjegpi89au-thomas-shellberg" translatesAutoresizingMaskIntoConstraints="NO" id="L7f-O2-277" userLabel="Background Image View">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9jn-57-qAI" userLabel="MaskView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="2Hp-K5-WEM">
-                                <rect key="frame" x="26" y="96" width="323" height="239"/>
+                                <rect key="frame" x="26" y="84" width="323" height="239"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Kb1-kA-v4H">
                                         <rect key="frame" x="0.0" y="0.0" width="323" height="174.5"/>
@@ -425,7 +426,7 @@
                     </constraints>
                 </stackView>
             </objects>
-            <point key="canvasLocation" x="4418.840579710145" y="111.68478260869566"/>
+            <point key="canvasLocation" x="4418" y="115"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="vGT-7L-m7P">
@@ -631,18 +632,18 @@
             <objects>
                 <viewController id="F7V-xv-5Jk" customClass="ResetPasswordViewController" customModule="FirebaseDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qni-zf-uXp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_fjegpi89au-thomas-shellberg" translatesAutoresizingMaskIntoConstraints="NO" id="KhK-Le-Hlt" userLabel="Background Image View">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUr-vC-wJT" userLabel="MaskView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="2XC-IN-agQ">
-                                <rect key="frame" x="26" y="96" width="323" height="145"/>
+                                <rect key="frame" x="26" y="84" width="323" height="145"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QXX-wx-lxD">
                                         <rect key="frame" x="0.0" y="0.0" width="323" height="35"/>
@@ -737,7 +738,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="egJ-Rz-ft8" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="GMv-Lh-Cd9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -801,7 +802,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Z9i-G0-Dwu">
-                                <rect key="frame" x="67" y="81" width="241" height="314.5"/>
+                                <rect key="frame" x="67" y="81" width="241" height="313.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-1" translatesAutoresizingMaskIntoConstraints="NO" id="QXY-cc-ma8">
                                         <rect key="frame" x="0.5" y="0.0" width="240" height="240"/>
@@ -816,13 +817,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bessie Lloyd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPl-jM-Qr1">
-                                        <rect key="frame" x="60.5" y="255" width="120" height="24"/>
+                                        <rect key="frame" x="63.5" y="255" width="114.5" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="323 photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zx3-8e-RGX">
-                                        <rect key="frame" x="76" y="294" width="89.5" height="20.5"/>
+                                        <rect key="frame" x="77.5" y="293.5" width="86" height="20"/>
                                         <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
