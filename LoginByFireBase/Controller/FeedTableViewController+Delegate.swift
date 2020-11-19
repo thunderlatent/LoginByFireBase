@@ -10,6 +10,7 @@ import UIKit
 //MARK: UITableViewDelegate
 extension FeedTableViewController
 {
+    //Infinite rolling
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         //滑到最下面兩個cell時觸發
         guard !isLoadingPost, (postFeed.count - indexPath.row == 2) else {return}
